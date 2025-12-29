@@ -34,4 +34,10 @@ Bottom right:EGFR-HERC4 Linear Regression.
 Repository Structure
 data: Contains raw FPKM counts (GSE102485).
 scripts: analysis_pipeline.R - Full code from cleaning to final visualization.
+![Main Results](./All-Results.png)
 figures: High-resolution PNG exports of the results.
+ggsave("All-Results.png", 
+       plot = final_plot, 
+       width = 16,     
+       height = 10, 
+       dpi = 300)
